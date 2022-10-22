@@ -1,0 +1,24 @@
+<div fxFlex fxLayout="row" fxLayoutAlign="center stretch" >
+    <div fxFlex style="padding: 20px;">
+      
+      <div *ngIf="eletronic$ | async as e">
+        <div>
+          <p>Nome: {{e.nome}}</p>
+          <p>Marca: {{e.marca}}</p>
+          <p>Preço: {{e.preco}}</p>
+          <p>Descrição: {{e.descricao}}</p>
+        </div>
+      </div>
+  
+      <mat-divider></mat-divider>
+      <button mat-button (click)="back()">
+        <mat-icon>undo</mat-icon>
+        Back
+      </button> 
+  
+    </div>
+  </div>
+
+  <mat-divider></mat-divider>
+  <router-outlet></router-outlet>
+  <mat-divider></mat-divider>

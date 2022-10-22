@@ -1,0 +1,23 @@
+<div class="grid">
+  <div *ngIf="livro$ | async as livro">
+    <div>
+      <p>Book title: {{livro.title}}</p>
+      <p>Pages: {{livro.paginas}}</p>
+    </div>
+    <div>
+      <button mat-raised-button color="primary" (click)="goAutores()" class="btn">
+        <mat-icon>people_outline</mat-icon>
+        Authors
+      </button>
+
+      <button mat-raised-button color="accent" (click)="remove()" class="btn">
+        <mat-icon>delete_outline</mat-icon>
+        Remove
+      </button>
+    </div>
+
+  </div>
+  <div class="router">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.a {
+     display: flex;
+     justify-content: center;
+    }
+.a form{ 
+    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+mat-form-field{
+    width: 30%;
+    
+}
+button{
+    margin-left: 15px;
+}
